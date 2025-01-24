@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav li {
+    margin: 0 20px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  #chat {
+    background-color: #f5f5f5;
+    padding: 20px;
+  }
+  
+  .chat-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .messages {
+    flex-grow: 1;
+    overflow-y: auto;
+  }
+  
+  .message {
+    margin-bottom: 10px;
+  }
+  
+  .message p {
+    margin: 0;
+  }
+  
+  .message .timestamp {
+    font-size: 0.8em;
+    color: gray;
+  }
+  
+  .typing-indicator {
+    font-style: italic;
+    color: gray;
+    margin-top: 10px;
+  }
+  
+  .message-input {
+    display: flex;
+    margin-top: 20px;
+  }
+  
+  .message-input input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .message-input button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .message-input button:hover {
+    background-color: #0056b3;
+  }
+  
+  #other {
+    padding: 20px;
+    background-color: #f5f5f5;
+  }
+  
+  .other-section {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .user-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .user-list li {
+    margin: 5px 0;
+  }
+  
+  .online-status {
+    color: green;
+  }
+  
+  .offline-status {
+    color: red;
+  }
+  
+  h3 {
+    margin-top: 20px;
+    font-size: 1.2em;
+  }
+  
+  ul {
+    margin-top: 10px;
+  }
+  

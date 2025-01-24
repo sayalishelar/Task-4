@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat UI</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#chat">Chat Section</a></li>
+      <li><a href="#other">Other Section</a></li>
+    </ul>
+  </nav>
+
+  <section id="chat">
+    <div class="chat-container">
+      <div class="messages" id="messages">
+        <!-- Messages will be dynamically inserted here -->
+      </div>
+      
+      <div class="typing-indicator" id="typingIndicator" style="display: none;">
+        <p>Someone is typing...</p>
+      </div>
+
+      <div class="message-input">
+        <input type="text" id="messageInput" placeholder="Type a message..." />
+        <button onclick="sendMessage()">Send</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="other">
+    <div class="other-section">
+      <h2>About This Chat Application</h2>
+      <p>This is a simple, responsive chat interface designed to simulate a real-time conversation with typing indicators, timestamps, and message input. It also includes navigation links for easy access to different sections.</p>
+      
+      <h3>Online Users</h3>
+      <ul class="user-list">
+        <li><span class="online-status">Online</span> - John Doe</li>
+        <li><span class="offline-status">Offline</span> - Jane Smith</li>
+        <li><span class="online-status">Online</span> - Alice Johnson</li>
+      </ul>
+      
+      <h3>App Features</h3>
+      <ul>
+        <li>Real-time chat with typing indicator</li>
+        <li>Message timestamps for each sent message</li>
+        <li>Navigation between sections with ease</li>
+      </ul>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
